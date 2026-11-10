@@ -1,0 +1,30 @@
+{
+  "name": "devops-kt3",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Стартовый проект для контрольной точки № 3 по дисциплине «Введение в DevOps»",
+  "main": "src/server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "jest --runInBand",
+    "lint": "eslint src/"
+  },
+  "dependencies": {
+    "express": "^5.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^9.0.0",
+    "jest": "^30.0.0",
+    "supertest": "^7.0.0"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "testMatch": [
+      "**/tests/**/*.test.js"
+    ]
+  }
+}
